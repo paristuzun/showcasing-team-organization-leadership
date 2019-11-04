@@ -1,6 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+h2, .btn {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+}
   
 .heading-wrapper {
     width: 100%;
@@ -13,7 +18,7 @@ body {
     font-size: 1rem;
     margin: 0;
 }
-  
+
 .page-heading {
     font-size: 2.2rem;
     color: #040000;
@@ -23,8 +28,14 @@ body {
     margin: 0 0 16px 0;
 }
   
-.page-heading span {
+.page-heading span, .btn {
     font-weight: 600;
+}
+
+.btn {
+    border-radius: 0;
+    letter-spacing: 0.06rem;
+    padding: .6rem 1rem;
 }
   
 .chief .chief-content img {
@@ -40,4 +51,44 @@ body {
     max-width: 100%;
     height: auto;
     max-height: 100%;
-}  
+}
+
+@media (min-width: 768px) {
+.chief-txt {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
+@media (min-width: 768px) {
+.col-sm-offset-1 {
+    margin-left: 8.33333%;
+}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .chief-txt h3 {
+        font-size: 1.5rem;
+    }
+.chief-txt p {
+    font-size: 0.9rem;
+}
+}
+
+@media (max-width: 768px) {
+.chief-content .col-sm-6, .chief-txt {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+@media (max-width: 767px) {
+.hidden-xs {
+    display: none !important;
+}
+}
+
+@media (max-width: 767px) {
+.chief-img {
+    margin-bottom: 2rem;
+}
+}
