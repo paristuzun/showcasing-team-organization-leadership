@@ -106,5 +106,24 @@ h2, .btn {
     -ms-border-radius: 50%;
     border-radius: 50%;
     margin-bottom: 25px;
+    height: 100%;
+    object-fit: cover;
 }
+
+.person-list li {
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+@media (max-width: 991px) {
+.person-list li {
+    margin-bottom: 25px;
+}
+}
+.person-list li {
+    padding: 0 3px;
+}
+.col-xs-6 {
+    width: 50%;
+}
+
 
